@@ -1,3 +1,9 @@
+/* Hi James, thanks for checking out my code. I hope you enjoy it!
+
+    As you might have noticed, I had trouble with getting the boxes to align properly to the right hand side of the screen.
+    
+    I tried using a table (yes I know I shouldn't) and eventually I reverted back to what you see now. I think I'm getting the hang of it though. */
+
 body{
     background-color: lightgray;
 }
@@ -13,21 +19,38 @@ body{
     position: relative;
     width: 100%;
     list-style-type: none;
-    padding: 20px 0 20px 20px;
-}
-.logo {
-    padding: 5px;
-    display: inline-block;
+    /* padding: 20px 0 20px 20px; */
 }
 .wordmark {
-    padding: 5px;
-    display: inline-block;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 30px;
+    text-decoration: none;
+    display: inline-block;
 }
 .menu-label {
-    display: inline-block;
-    position: absolute;
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 10px;
+    font-size: 20px;
+    display: inline-block;
 }
+a.menu-label:visited {
+    color: rgb(83, 81, 81);
+}
+a.wordmark:visited {
+    color: black;
+}
+a.menu-label:link {
+    color: rgb(83, 81, 81);
+}
+a.wordmark:link {
+    color: black;
+}
+/* div {
+    border: 1px solid black;
+} */
+
+/* 
+
+Put inline-block on both of the elements that should be on the same line
+
+Make one div float left and the other float right. Need to set the width on the first element and the second
+*/
